@@ -1,8 +1,10 @@
 {
-  "name": "terminalgame",
+  "name": "cligame",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,6 +12,15 @@
   "license": "ISC",
   "description": "Jogo de CLI em TypeScript",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@types/blessed": "^0.1.25",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "chalk": "^5.0.0",
+    "commander": "^10.0.0",
+    "inquirer": "^9.0.0"
   }
 }
